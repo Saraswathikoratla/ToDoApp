@@ -7,6 +7,11 @@ body{
     width: 100%;
    background-color: rgba(0, 0, 0, 0.282);
 }
+.appName{
+   text-align: center;
+   margin-top: 3vh;
+   
+}
 .container1{
     height: 100%;
     width: 100%;
@@ -26,7 +31,7 @@ body{
     align-self: center;
 }
 .inputbox1{
-    height: 5vh;
+    height: 8vh;
     width: 25vw;
     outline: none;
     border: none;
@@ -34,14 +39,28 @@ body{
     font-size: 3vh;
     font-weight: bold;
     border-radius: 2vh;
+    position: relative;
+    top: 10vh;
+    padding-left: 2vw;
    
 }
+.inputbox1::placeholder{
+    font-size: 3vh;
+    word-spacing: 1vw;
+    letter-spacing: 0.5vw;
+    font-weight: bold;
+    text-align: center;
+}
 .addingtask{
-    height: 5vh;
-    width: 8vw;
+    height: 8vh;
+    width: 12vw;
     border-radius: 2vh;
+    font-size: 3vh;
+    font-weight: bold;
     box-shadow: 2px 2px 2px black;
     cursor: pointer;
+    position: relative;
+    top: 10vh;
 }
 .container2{
     height: 20vh;
@@ -55,39 +74,35 @@ ul{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 2vh;
+    
 }
-button{
-    height: 5vh;
-    width: 5vw;
+.deletebutton,.editbutton{
+    height: 7vh;
+    width: 9vw;
     border-radius: 2vh;
     background-color: aqua;
     cursor: pointer;
+    position: relative;
+    top: 15vh;
+}
+.editbutton:hover{
+ background-color: violet; 
 }
 
 .deletebutton:hover{
-    height: 6vh;
-    width: 7vw;
-    background-color: red;
+   background-color: red;
 }
-button:hover,.addingtask:hover{
-    height: 6vh;
-    width: 8vw;
-    
+.addingtask:hover{
     background-color: chartreuse;
 }
 .addedTasks{
     height: 5vh;
-    width: auto;
+    width: 20vw;
     border: 2px solid black;
     text-align: center;
    padding-bottom: 6px;
     border-radius: 2vh;
     background-color: rgb(190, 16, 103);
-}
-.addedTasks:hover{
-    /* height: 5vh;
-    width: 16vw; */
-    transform: skew(30deg);
-    background-color: cornflowerblue;
-    cursor: pointer;
+    position: relative;
+    top: 15vh;
 }
